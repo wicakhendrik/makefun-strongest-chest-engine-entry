@@ -11,8 +11,9 @@ A chess engine in under 4 KB of Python, for make.fun's
 - alpha-beta with principal variation search, transposition table,
   null move, late move reductions, futility pruning, killers and history
 - capture search at the leaves, check extension
-- piece-square evaluation blended by game phase, with passed pawn and
-  open file terms set from the root position
+- tapered evaluation: middlegame and endgame square values blended by
+  game phase, PeSTO's material values (Ronald Friederich), passed pawn,
+  doubled pawn and open file terms set from the root position
 - a fixed node budget per move: no clock, so every replay plays the same moves
 
 `main.py` is the readable source packed with `makefun compress`.
